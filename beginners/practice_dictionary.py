@@ -27,3 +27,40 @@ sample_dictionary['city'] = 'Tampa'
 
 print(sample_dictionary)
 
+# to update a dictionary
+
+# update single value at a time
+sample_dictionary['company'] = 'New_Employer'
+
+print(sample_dictionary['company'])
+
+# to update multiple values in a dictionary
+
+sample_dictionary.update({'age' : 28, 'salary' : 70.35, 'exp' : 5})
+
+print(sample_dictionary)
+
+
+# delete keys from a dictionary, del with permanently delete and you wont be able to store it in an object
+
+del sample_dictionary['exp']
+
+print(sample_dictionary)
+
+# to store the deleted element in an object
+
+popped_city = sample_dictionary.pop('city')
+
+print(sample_dictionary)
+print(f'popped value : {popped_city}')
+
+# to get only keys, values & a combination of both
+
+print('print all keys in the dictionary',sample_dictionary.keys())
+print('print all values in the dictionary',sample_dictionary.values())
+print('print key & value in the dictionary',sample_dictionary.items())
+
+# loop through a dictionary
+
+for key,value in sample_dictionary.items():
+    print(key,value)
